@@ -17,6 +17,11 @@ btn.addEventListener("click", function (event) {
     
     
     let selectedCourse = courseDropdown.value;
+    if (!inputbox.value || !inputbox1.value || !inputbox2.value || !gender || !selectedCourse) {
+        alert("Please fill all fields!");
+        return; 
+    }
+
     
 
     let tr = document.createElement("tr");
