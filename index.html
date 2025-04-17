@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student details task</title>
+
+    
+</head>
+<body>
+    <style>
+        td select {
+            width: 100%; 
+            padding: 5px;
+            box-sizing: border-box;
+        }
+    </style>
+    <form>
+        <h1>STUDENT FORM</h1> 
+           <table border="1" id="stable">
+              
+            <tr>
+        <th>Name</th> <td><input type="text"  id="inputbox"></td></tr>
+        <tr>
+        <th>Age</th> <td><input type="number"  id="inputbox1"></td></tr>
+        <tr>
+            <th>Gender</th> 
+            <td>
+                <label><input type="radio" name="gender" value="male"> Male </label>
+                <label><input type="radio" name="gender" value="Female"> Female </label>
+            </td>
+        </tr>
+        <tr>
+            <th>Course</th> <td><select id="course"><Option>JavaScript</Option><Option>Python</Option><Option>C++</Option></select></td></tr> 
+            <tr>
+    <th>E-mail</th> <td><input type="email" id="inputbox2"></td></tr>
+            <tr><th colspan="2" ><button type="submit" id="btn">save</button></th></tr>
+       
+    </table>
+
+    </form>
+    <br>
+    <table border="1">
+        <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Course</th>
+       <th>E-mail</th>
+       <th>Action</th>
+        </tr>
+    <tbody id="container"></tbody>
+
+    </table>
+</body>
+</html>
+
+<script src="script.js"></script>
