@@ -9,6 +9,7 @@ btn.style.backgroundColor="lightblue";
 btn.style.width="100%"
 btn.style.padding="5px"
 
+
 btn.addEventListener("click", function (event) {
     event.preventDefault();
 
@@ -40,19 +41,26 @@ tdCourse.textContent = selectedCourse;
 
     let tdEmail = document.createElement("td");
     tdEmail.textContent = inputbox2.value;
-    let tdAction = document.createElement("td");
-    let deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Delete";
-    deleteBtn.style.backgroundColor = "red";
-    deleteBtn.style.color = "white";
-    deleteBtn.style.border = "none";
-    deleteBtn.style.padding = "5px 10px";
-    deleteBtn.style.cursor = "pointer";
-    deleteBtn.addEventListener("click", function() {
-        tr.remove();  // removes the entire row
-    });
 
-    tdAction.appendChild(deleteBtn);
+    
+    
+    let tdAction = document.createElement("td");
+let deleteBtn = document.createElement("button");
+
+deleteBtn.innerHTML = '<i class="fa-solid fa-trash-can" style="margin-right:5px;"></i> Delete';
+
+deleteBtn.style.backgroundColor = "red";
+deleteBtn.style.color = "white";
+deleteBtn.style.border = "none";
+deleteBtn.style.padding = "5px 10px";
+deleteBtn.style.cursor = "pointer";
+
+deleteBtn.addEventListener("click", function() {
+    tr.remove(); 
+});
+
+tdAction.appendChild(deleteBtn);
+    
     
 
     tr.appendChild(tdName);
@@ -69,3 +77,4 @@ tdCourse.textContent = selectedCourse;
 
     document.querySelector('form').reset();
 });
+

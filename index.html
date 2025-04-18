@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student details task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     
 </head>
@@ -13,6 +14,17 @@
             width: 100%; 
             padding: 5px;
             box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form{
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
     </style>
     <form>
@@ -34,7 +46,7 @@
             <th>Course</th> <td><select id="course"><Option>JavaScript</Option><Option>Python</Option><Option>C++</Option></select></td></tr> 
             <tr>
     <th>E-mail</th> <td><input type="email" id="inputbox2"></td></tr>
-            <tr><th colspan="2" ><button type="submit" id="btn">save</button></th></tr>
+            <th colspan="2" ><button type="submit" id="btn">save</button></th>
        
     </table>
 
